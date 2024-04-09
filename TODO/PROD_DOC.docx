@@ -1,0 +1,62 @@
+IS.FAČR
+IS.FAČR neboli informační systém FAČR. Je to informační systém, který slouží k zlepšení fotbalové komunity. Umožňuje vytvářet články, které mohou zobrazovat všichni uživatelé. Uživatelé se mohou registrovat a přihlašovat. Po přihlášení mohou vytvářet, upravovat a mazat své články. Admin může vytvářet, upravovat a mazat články všech uživatelů. Uživatelé mohou zobrazit svůj profil.
+
+Úvod do aplikace
+Při příchodu na stránku se zobrazí hlavička, navigační menu a články.
+
+Hlavička
+Hlavička obsahuje logo FAČR. Po kliknutí na logo se uživatel vrátí na úvodní stránku(main.php).  Po přihlášení se zobrazí jméno uživatele a tlačítko pro odhlášení.
+
+Navigační menu
+Obsahuje tlačítko na stránku o nás(about.php), tlačítko pro zobrazení profilu, které je dostupné pouze pro přihlášené uživatele(profile.php) a na něm rozbalovací menu pro přihlášení(login.php) a registraci(register.php). Dále obsahuje tlačítko pro zobrazení článků(main.php) a tlačítko kontaktu na mě(contact.php) pod kterým se nachází rozbalovací menu s kontakty na komisi rozhodčích, sekretariátu a na mapu hřišť(externí odkazy - nebylo součástí zadání).
+
+Články
+Články jsou zobrazovány na úvodní stránce(main.php). Obsahují název, datum vytvoření a autora. Dále tlačítko detailu(article_detail.php). Po kliknutí na tlačítko detail se zobrazí detail článku. Pokud je uživatel přihlášený, může své články upravit(edit_article.php) nebo smazat(delete.php). Pokud není přihlášený, může pouze článek zobrazit. Admin může vytvářet, upravovat a mazat články všech uživatelů.
+
+Detail článku
+Detail článku obsahuje název, datum vytvoření, text a jméno autora. Pokud je uživatel přihlášený, může svůj článek upravit nebo smazat. Admin můžeu pravovat a mazat články všech uživatelů.
+
+Registrace
+Registrace je dostupná z navigačního menu. Obsahuje jméno, příjmení, email, heslo a potvrzení hesla a fotku. Po kliknutí na tlačítko registrovat, se zobrazí hláška o úspěšné registraci a uživatel je přesměrován na přihlašovací stránku.
+
+Přihlášení
+Přihlášení je dostupné z navigačního menu. Obsahuje email a heslo. Po kliknutí na tlačítko přihlásit se zobrazí hláška o úspěšném přihlášení a uživatel je přesměrován na úvodní stránku. Pokud uživatel zadal špatné údaje, zobrazí se mu hláška o neúspěšném přihlášení. Email se vloží zpět do formuláře a heslo se vymaže.
+
+admin: admin@admin.cz admin
+users: 
+user1: lolo@lolo.cz 12345678
+user2: kokona@koko.cz 12345678
+
+Profil
+Profil je dostupný z navigačního menu. Obsahuje jméno, příjmení, email a fotku. Je pouze pro přihlášené uživatele. Pokud je uživatel přihlášený, může svůj profil zobrazit. Je to pouze k informačním účelům. Admin může vymazat všechny uživatele a články z databáze.
+
+Upravit článek
+Upravit článek je dostupné z detailu článku nebo ze zobrazení všech článků. Obsahuje název a text. Je pouze pro přihlášené uživatele. Pokud je uživatel přihlášený, může svůj článek upravit. Admin může upravovat články všech uživatelů.
+
+Smazat článek
+Smazat článek je dostupné z detailu článku nebo ze zobrazení všech článků. Je pouze pro přihlášené uživatele. Pokud je uživatel přihlášený, může svůj článek smazat. Admin může mazat články všech uživatelů. Po kliknutí na tlačítko smazat se zobrazí hláška o úspěšném smazání a článek je vymazán z databáze.
+
+Vytvořit článek
+Vytvořit článek je hned vedle Moje články(my_article.php). Obsahuje název a text. Je pouze pro přihlášené uživatele. Pokud je uživatel přihlášený, může svůj článek vytvořit. Po kliknutí na tlačítko vytvořit se zobrazí hláška o úspěšném vytvoření a článek je vytvořen v databázi. Přesměrování na main.php.
+
+Moje články
+Je pouze pro přihlášené uživatele. Pokud je uživatel přihlášený, může zobrazit své články. Pokud žádné články nemá, zobrazí se mu hláška, že žádné články nemá. U každého článku je tlačítko pro upravení a smazání. Po kliknutí na tlačítko upravit se zobrazí edit_article.php. Po kliknutí na tlačítko smazat se zobrazí hláška o úspěšném smazání a článek je vymazán z databáze.
+
+Styly
+Styly jsou v souboru style.css. Používají se pro všechny stránky. Obsahují styly pro hlavičku, navigační menu, články, detail článku, registraci, přihlášení, profil, upravit článek, smazat článek, vytvořit článek, moje články a footer. Print.css obsahuje styly pro tisk.
+
+Skripty
+Skripty jsou v souboru script.js. Používají se pro validaci hodnot.
+
+Databáze
+Database.json je pro uživatele a article_database.json je pro články. Uživatelé obsahují jméno, příjmení, email, heslo a fotku. Články obsahují název, text, datum vytvoření, autora a id. Id je pro rozlišení článků.
+
+Kontakt
+Kontakt je dostupný z navigačního menu. Obsahuje email, na který mohou uživatelé přejít rovnou do svého poštovního klienta.
+
+Uploads
+Uploads obsahuje fotky uživatelů. Fotky se ukládají do složky uploads. Fotky se ukládají podle emailu uživatele.
+
+Algoritmy jsou popsané v kódu. Doufám, že jsem všechny popsal a že to takto stačí.
+
+Dělání stránek mě bavilo, ale ocenil bych, hned od začátku nějakou kostru. Neustále jsem měnil layout složek a souborů. 

@@ -1,0 +1,41 @@
+/*STYLY JSOU PŘEVÁŽNĚ PRO PRINT HLAVNÍ STRÁNKY*/
+body {
+    font-size: 10pt;
+    font-family:'Times New Roman', Times, serif ;
+
+}
+img {
+    display: none;
+}
+.obrazek-odkaz {
+    display: none;
+}
+.navigation {
+    display: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid transparent; /* Hide borders */
+    background-color: transparent; /* Hide background colors */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+a {
+    display: none;
+}
+
+.pagination {
+    display: none;
+}
+
+footer {
+    display: none;
+}

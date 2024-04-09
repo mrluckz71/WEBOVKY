@@ -1,0 +1,388 @@
+/*STYLY JSOU HODNĚ NA SPŘEHÁZENÉ, PROTOŽE JSEM JE DĚLAL, KDYŽ JSEM NEVĚDĚL, CO DĚLÁM A TAKY PROTO ŽE JSEN SI MYSLEL, ŽE MAJÍ BÝT VŠECHNY V JEDNOM SOUBORU, BOHUŽEL UŽ NEMÁM ČAS TO UPRAVIT*/
+
+
+/*HOMEPAGE------------------*/
+body{
+    background: lightblue;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: black;
+    font-size: 35px;
+}
+/*NAVIGATION--------------*/
+.obrazek-odkaz{
+    background: linear-gradient(45deg, rgba(22, 22, 169, 0.7), rgba(248, 207, 207, 0.7));
+    display: flex;
+}
+a img{
+    display: flex;
+    
+}
+/*ODKAZ OBRAZEK*/
+a#odkaz{
+    width: 84px;
+    display: block;
+    box-sizing: border-box;
+}
+/*NAVIGACNI TLACITKA*/
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    border: 1px solid #3c78d8;
+    margin: 0;
+}
+.buttons li{
+    display: inline;
+    text-align: center;
+    border: 1px solid blue;
+    background-color: #3c78d8;
+    width: 100%;
+}
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+li a:hover{
+    opacity: 0.5;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 20%;
+    background-color: #3c78d8;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    border-top: 1px solid #3c78d8;
+    padding: 25px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*BODY---------------------*/
+.sect-field-cla {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+.sect-field-my-cla {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    min-height: 400px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    left: 10%;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.content {
+    padding: 20px;
+    position: relative;
+    width: 60%;
+    left: 20%;
+    top: 20px;
+    min-height: 400px;
+    flex-wrap: wrap;
+    border: solid 1px #3c78d8;
+}
+
+.my_art_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+   
+}
+.sect-field-cla table {
+    padding: 10px;
+}
+.sect-field-cla h2{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.sect-field-my-cla th{
+    font-size: 20px;
+    padding: 10px;
+}
+.sect-field-cla th{
+    font-size: 20px;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+th, td {
+    border-bottom: 1px solid #3c78d8;
+    padding: 8px;
+    text-align: left;
+}
+
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.pagination a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+    margin: 0 4px;
+}
+.pagination a.active{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid blue;
+    background-color: #3c78d8;
+    margin: 0 4px;
+}
+.order{
+    border: #3c78d8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: #3c78d8;
+    color: white;
+    text-decoration: none;
+}
+.error{
+    color: red;
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+/*FOOTER-------------------*/
+
+.sect-main-footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(240, 242, 243, 0.6);
+    bottom: 0;
+    margin-top: 200px;
+}
+.sect-log-footer{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(240, 242, 243, 0.6);
+ }
+ 
+.copyright{
+    text-align: center;
+}
+/*REGISTRACE---------------------------------------*/
+.sect-reg{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.form-box-reg{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 100px 0 100px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.sect-field-reg{
+    padding: 40px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.inputbox-reg{
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.inputbox-reg input{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-reg:hover {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+.login-reg{
+    padding-inline: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #cecece;
+    color: black;
+    text-decoration: none;
+}
+
+.login-log {
+    padding: 5px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #cecece;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-log:hover {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.sect-reg-footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(240, 242, 243, 0.6);
+    bottom: 0;
+
+}
+.required {
+    color: red;
+}
+.short{
+    background-color: rgba(246, 16, 16, 0.6);
+}
+.long{
+    background-color: rgba(16, 246, 16, 0.6);
+}
+.taken{
+    background-color: rgba(246, 16, 16, 0.6);
+}
+.longtext {
+    color: rgba(246, 16, 16);
+}
+.shorttext {
+    color: rgba(16, 246, 16);
+}
+
+/*PRIHLASENI-------------------------------------*/
+.sect-log{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+    padding-top: 50px;
+}
+.form-box-log{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 40px;
+}
+.inputbox-log{
+    margin: 10px;
+}
+
+.inputbox-log input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    padding: 5px 20px 5px 10px;
+    left: 40%;
+}
+
+.register-log{
+    margin: 20px;
+}
+.odkaz-login{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #cecece;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
